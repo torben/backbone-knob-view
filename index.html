@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="knob.css">
+</head>
+
+<body>
+
+<div class="knob1"></div>
+<div class="knob2"></div>
+
+
+<script src="lib/zepto.js"></script>
+<script src="lib/underscore.js"></script>
+<script src="lib/backbone.js"></script>
+<script src="knob_view.js"></script>
+
+<script>
+var knobView = new KnobView();
+$(".knob1").html(knobView.render().el);
+</script>
+
+</body>
+</html>
