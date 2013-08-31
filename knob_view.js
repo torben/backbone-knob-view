@@ -63,6 +63,8 @@ var KnobView = Backbone.View.extend({
     } else {
       this.$(".knob").removeClass("toggle-on").addClass("toggle-off");
     }
+
+    this.trigger("change", this.model);
   },
 
 

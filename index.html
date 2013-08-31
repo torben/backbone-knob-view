@@ -20,6 +20,10 @@
 <script>
 var knobView = new KnobView();
 $(".knob1").html(knobView.render().el);
+
+knobView.on("change", function(knob) {
+  console.log("Knob is " + ((knob.get("active") == true) ? "active" : "inactive"));
+});
 </script>
 
 </body>
